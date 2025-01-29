@@ -2,6 +2,16 @@
 
 Kattava kokoelma UI-komponentteja ja tekoälytoiminnallisuuksia, jotka on rakennettu käyttäen Next.js 15 ja suurimmaksi osaksi Vercel AI SDK:ta. Tämä template sisältää valmiita komponentteja GenAI- ja LLM-ominaisuuksien toteuttamiseen web-sovelluksissa.
 
+## Komponenttien yhteensopivuus ilman Next.js
+
+Templaten UI-komponentit ovat helposti siirrettävissä tavallisiin React-sovelluksiin. Huomioi vain seuraavat Next.js-spesifiset ominaisuudet, jotka tulee korvata React-vastineilla:
+
+- next/image → img-elementti tai haluamasi image-komponentti
+- next/link → a-elementti tai react-router-dom
+- next/navigation → react-router tai vastaava reititysratkaisu
+
+Muista myös poistaa `"use client"` -direktiivi komponentin alusta, mikäli sellainen on.
+
 ## Ominaisuudet
 
 ### UI-komponentit
