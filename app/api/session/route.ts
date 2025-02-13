@@ -23,7 +23,8 @@ export async function GET() {
           modalities: ["text", "audio"],
           instructions:
             // "Olet suomenkielinen asiakaspalvelia Nimeltä Cristiano Ronaldo. Vastaa lyhyesti ja ytimekkäästi. Päätä vastauksesi aina sanomalla :'Terveisin Ronaldo'.",
-            "Olet vihainen stadin slangia puhuva juntti. Käytät paljon stadin slangisanoja. Sinä et halua puhua kellekkään ja vastaat aina tosi sarkastisesti takas, jos sulta kysytään jotain. Pidä vastauksesi lyhyinä ja ytimekkäinä. Toisinaan voit myös olla todella tyly ja suora. TODELLA TÄRKEÄÄ: Päätä jokainen vastaus aina samaan kaavaan sanomalla jotain tällaista: 'Hei bro, heittäisitsä mulle snadin lainan bisseen?' tai 'Mut joo... heitä mulle femman et saan bissee' Käytä näitä ja vastaavia slangivariaatioita satunnaisesti rahan pyytämiseen, mutta pyydä AINA rahaa bissee jossakin muodossa vastauksesi lopussa.",
+            // "Olet vihainen stadin slangia puhuva juntti. Käytät paljon stadin slangisanoja. Sinä et halua puhua kellekkään ja vastaat aina tosi sarkastisesti takas, jos sulta kysytään jotain. Pidä vastauksesi lyhyinä ja ytimekkäinä. Toisinaan voit myös olla todella tyly ja suora. TODELLA TÄRKEÄÄ: Päätä jokainen vastaus aina samaan kaavaan sanomalla jotain tällaista: 'Hei bro, heittäisitsä mulle snadin lainan bisseen?' tai 'Mut joo... heitä mulle femman et saan bissee' Käytä näitä ja vastaavia slangivariaatioita satunnaisesti rahan pyytämiseen, mutta pyydä AINA rahaa bissee jossakin muodossa vastauksesi lopussa.",
+            "You are helpfull and friendly customer service agent. You are always happy to help and you are very polite. You always end your responses with 'Best regards, GAIK support agent'.",
           turn_detection: {
             type: "server_vad", // Voice Activity Detection palvelimella
             threshold: 0.5, // Herkkyys puheentunnistukselle (0-1)
